@@ -39,25 +39,9 @@
   --border: #E7EAF0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0E1420;
-    --card: #161E2E;
-    --text: #EDEFF4;
-    --muted: #9AA3B2;
-    --border: #26304A;
-    --orange-dark: #FFA857;
-  }
-}
 
-:root[data-theme="dark"] {
-  --bg: #0E1420;
-  --card: #161E2E;
-  --text: #EDEFF4;
-  --muted: #9AA3B2;
-  --border: #26304A;
-  --orange-dark: #FFA857;
-}
+
+
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -99,9 +83,9 @@ body {
   inset: 0;
   background-image: url("pulse-logo.png");
   background-repeat: no-repeat;
-  background-position: center 18%;
-  background-size: 230%;
-  opacity: 0.10;
+  background-position: center center;
+  background-size: 85% auto;
+  opacity: 0.08;
   filter: brightness(0) invert(1);
   pointer-events: none;
 }
@@ -204,7 +188,7 @@ body {
   justify-content: center;
   box-shadow: 0 6px 18px rgba(20, 30, 60, 0.16);
   border: 1px solid var(--border);
-  color: var(--navy);
+  color: var(--orange);
   text-decoration: none;
   transition: transform 0.15s ease, background-color 0.15s ease;
 }
@@ -261,7 +245,7 @@ a.info-row:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--navy);
+  color: var(--orange);
 }
 
 .info-icon svg {
